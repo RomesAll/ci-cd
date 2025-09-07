@@ -8,4 +8,4 @@ class Calc:
     
 
 calc = Calc(13,94)
-#dsfasd
+print(calc.a, calc.b)
