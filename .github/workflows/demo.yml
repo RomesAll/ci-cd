@@ -5,5 +5,7 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
+      - name: pip
+        run: pip install pytest
       - name: start testing
         run: pytest test_example.py
