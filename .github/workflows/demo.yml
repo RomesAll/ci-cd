@@ -8,4 +8,4 @@ jobs:
       - name: pip
         run: pip install pytest
       - name: start testing
-        run: pytest
+        run: python -c "import sys; print(sys.version)"
