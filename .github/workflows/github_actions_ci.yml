@@ -7,3 +7,5 @@ jobs:
             - name: Check out repository code
               uses: actions/checkout@v4
             - run: pip install -r site/requirements.txt
+            - run: ls
+            - run: pytest
