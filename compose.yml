@@ -1,0 +1,13 @@
+services:
+  fastapi:
+    build: ./site
+    image: fastapi
+    container_name: fastapi
+    restart: always
+    command: "python main.py"
+    env_file:
+      - .env
+    volumes:
+      - ./site:/site
+    ports:
+      - "8000:8000"
